@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smp.HomeController">
+   <children>
+      <AnchorPane fx:id="home" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="home_page" prefHeight="540.0" prefWidth="960.0">
+               <children>
+                  <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/bg.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="81.0" fitWidth="127.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="button_home" layoutX="628.0" layoutY="14.0" text="Home" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="button_myProyek" layoutX="688.0" layoutY="14.0" text="My Proyek" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="button_aboutUs" layoutX="777.0" layoutY="14.0" text="About Us" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink fx:id="button_contact" layoutX="860.0" layoutY="14.0" text="Contact" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="322.0" layoutY="83.0" text="WELCOME" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="336.0" layoutY="154.0" text="Proyek Terstruktur dan Terjadwal." textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="button_buatProyek" accessibleRole="BUTTON" fitHeight="72.0" fitWidth="160.0" layoutX="400.0" layoutY="379.0" onMouseClicked="#buatProyek" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/button_BuatProyek.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="383.0" layoutY="346.0" text="Mari Mulai Proyek Anda!" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="buatProyek_page" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <AnchorPane fx:id="buatProyek_proyek_page" prefHeight="540.0" prefWidth="960.0" styleClass="backgroundColor" stylesheets="@style.css" visible="false">
+               <children>
+                  <Hyperlink layoutX="628.0" layoutY="14.0" text="Home" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="688.0" layoutY="14.0" text="My Proyek" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="777.0" layoutY="14.0" text="About Us" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="860.0" layoutY="14.0" text="Contact" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="80.0" layoutY="40.0" text="BUAT PROYEK" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <TextField fx:id="namaProyek_form" layoutX="480.0" layoutY="140.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField fx:id="tujuanProyek_form" layoutX="480.0" layoutY="210.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField fx:id="tanggalTenggat_form" layoutX="480.0" layoutY="280.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField fx:id="anggaranProyek_form" layoutX="480.0" layoutY="350.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <Label layoutX="204.0" layoutY="142.0" text="Nama Proyek" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="199.0" layoutY="212.0" text="Tujuan Proyek" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="150.0" layoutY="282.0" text="Tenggat Waktu Proyek" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="352.0" text="Anggaran Proyek" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="batalBuatProyek_button" layoutX="80.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="BATAL" />
+                  <Button fx:id="lanjutBuatProyek_button" layoutX="789.0" layoutY="462.0" mnemonicParsing="false" onAction="#tambahProyek" prefHeight="45.0" prefWidth="90.0" text="LANJUT" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="buatProyek_anggota_page" prefHeight="540.0" prefWidth="960.0" styleClass="backgroundColor" stylesheets="@style.css" visible="false">
+               <children>
+                  <Hyperlink layoutX="628.0" layoutY="14.0" text="Home" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="688.0" layoutY="14.0" text="My Proyek" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="777.0" layoutY="14.0" text="About Us" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="860.0" layoutY="14.0" text="Contact" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="80.0" layoutY="40.0" text="BUAT PROYEK" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="99.0" text="Menambahkan Anggota" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <TextField layoutX="480.0" layoutY="140.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField layoutX="480.0" layoutY="210.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField layoutX="480.0" layoutY="280.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField layoutX="480.0" layoutY="350.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <Label layoutX="215.0" layoutY="142.0" text="ID Anggota" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="194.0" layoutY="212.0" text="Nama Anggota" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="196.0" layoutY="282.0" text="Umur Anggota" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="183.0" layoutY="352.0" text="Jabatan Anggota" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="80.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="KEMBALI" />
+                  <Button layoutX="789.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="LANJUT" />
+                  <Button layoutX="412.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="135.0" text="TAMBAH ANGGOTA" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="buatProyek_tugas_page" prefHeight="540.0" prefWidth="960.0" styleClass="backgroundColor" stylesheets="@style.css" visible="false">
+               <children>
+                  <Hyperlink layoutX="628.0" layoutY="14.0" text="Home" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="688.0" layoutY="14.0" text="My Proyek" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="777.0" layoutY="14.0" text="About Us" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink layoutX="860.0" layoutY="14.0" text="Contact" textFill="#1b4242">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="80.0" layoutY="40.0" text="BUAT PROYEK" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="99.0" text="Manajemen Tugas" textAlignment="CENTER" textFill="#1b4242">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b4242" height="40.0" layoutX="80.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+                  <TextField layoutX="480.0" layoutY="140.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField layoutX="480.0" layoutY="210.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <TextField layoutX="480.0" layoutY="280.0" prefHeight="40.0" prefWidth="400.0" promptText="Isi Disini" />
+                  <Label layoutX="215.0" layoutY="142.0" text="ID Anggota" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="246.0" layoutY="212.0" text="Tugas" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="282.0" text="Deadline" textAlignment="CENTER" textFill="#9ec8b9">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="80.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="KEMBALI" />
+                  <Button layoutX="789.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="90.0" text="LANJUT" />
+                  <Button layoutX="412.0" layoutY="462.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="135.0" text="TAMBAH ANGGOTA" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
